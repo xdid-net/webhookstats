@@ -98,7 +98,7 @@ const injectScript = require('injectScript');
 const queryPermission = require('queryPermission');
 const encodeUriComponent = require('encodeUriComponent');
 
-const url = "https://xdid-balancer.net/gtm/webhookstats.js?xdid=" + data.XDID + "?async=" + data.Async + "&url=" + encodeUriComponent(data.Webhook) + "&pageurl=" + encodeUriComponent(data.PageUrl) + "&clicktext=" + encodeUriComponent(data.ClickText) + "&clickclasses=" + encodeUriComponent(data.ClickClasses) + "&clickurl=" + encodeUriComponent(data.ClickUrl);
+const url = "https://xdid-balancer.net/gtm/webhookstats.js?xdid=" + data.XDID + "&async=" + data.Async + "&url=" + encodeUriComponent(data.Webhook) + "&pageurl=" + encodeUriComponent(data.PageUrl) + "&clicktext=" + encodeUriComponent(data.ClickText) + "&clickclasses=" + encodeUriComponent(data.ClickClasses) + "&clickurl=" + encodeUriComponent(data.ClickUrl);
 
 const onSuccess = () => {
   data.gtmOnSuccess();
